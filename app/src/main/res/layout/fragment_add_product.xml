@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.AddProductFragment"
+    android:orientation="vertical"
+    android:background="@android:color/white">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/name_product_label"
+        android:layout_margin="8dp"
+        android:textSize="22sp"
+        android:textColor="@android:color/black"/>
+
+    <EditText
+        android:id="@+id/txt_product_name"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_margin="8dp"
+        android:textSize="20sp"
+        android:background="@drawable/custom_input"
+        android:padding="12dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/type_product_label"
+        android:layout_margin="8dp"
+        android:textSize="22sp"
+        android:textColor="@android:color/black"/>
+
+    <EditText
+        android:id="@+id/txt_product_type"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_margin="8dp"
+        android:textSize="20sp"
+        android:background="@drawable/custom_input"
+        android:padding="12dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/description_product_label"
+        android:layout_margin="8dp"
+        android:textSize="22sp"
+        android:textColor="@android:color/black"/>
+
+    <EditText
+        android:id="@+id/txt_product_desc"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:inputType="text|textMultiLine"
+        android:layout_margin="8dp"
+        android:textSize="20sp"
+        android:gravity="top"
+        android:background="@drawable/custom_input"
+        android:padding="12dp"/>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/price_product_label"
+            android:textSize="22sp"
+            android:textColor="@android:color/black"
+            android:layout_marginEnd="136dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/shipping_product_label"
+            android:textSize="22sp"
+            android:textColor="@android:color/black" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/txt_product_price"
+            android:layout_width="150dp"
+            android:layout_height="45dp"
+            android:textSize="20sp"
+            android:layout_marginEnd="34dp"
+            android:inputType="numberDecimal"
+            android:background="@drawable/custom_input"
+            android:padding="12dp"/>
+
+        <EditText
+            android:id="@+id/txt_product_shipping"
+            android:layout_width="150dp"
+            android:layout_height="45dp"
+            android:textSize="20sp"
+            android:inputType="numberDecimal"
+            android:background="@drawable/custom_input"
+            android:padding="12dp"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_save_product"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/save_product_label"
+        android:textSize="20sp"
+        android:textAllCaps="false"
+        android:background="@drawable/button"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center"
+        android:textColor="@android:color/white"/>
+
+</LinearLayout>

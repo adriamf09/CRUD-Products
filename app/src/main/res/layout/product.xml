@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="8dp">
+            <TextView
+                android:id="@+id/product_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/name_product_default_text"
+                android:textSize="20sp"
+                android:padding="8dp"
+                android:textColor="@android:color/black"
+                />
+
+            <TextView
+                android:id="@+id/product_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/typeDefaultValue"
+                android:textColor="@color/colorPrimary"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:paddingBottom="8dp"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/product_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/product_description_default_value"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:paddingBottom="8dp"
+                android:textSize="18sp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/priceLabel"
+                    android:textSize="18sp"
+                    android:textColor="@android:color/black"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="16dp"
+                    android:paddingBottom="8dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/shippingLabel"
+                    android:textSize="18sp"
+                    android:textColor="@android:color/black"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="16dp"
+                    android:paddingBottom="8dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/product_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/priceDefaultValue"
+                    android:textSize="18sp"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="16dp"
+                    android:layout_marginEnd="8dp"/>
+
+                <TextView
+                    android:id="@+id/product_shipping"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/priceDefaultValue"
+                    android:textSize="18sp"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="16dp"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_launch_update"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="@string/btnEditText"
+                android:textSize="18sp"
+                android:textAlignment="textStart"
+                style="?attr/borderlessButtonStyle"
+                android:textColor="@color/colorPrimaryDark"
+                />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

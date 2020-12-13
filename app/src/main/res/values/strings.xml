@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Products</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="txtEmailHint">Email</string>
+    <string name="btnLoginText">Login</string>
+    <string name="txtPasswordHint">Contraseña</string>
+    <string name="base_url">http://192.168.0.102:1337/</string>
+    <string name="text_field_error">Este campo es requerido.</string>
+    <string name="access_token">access_token</string>
+    <string name="btnDeleteText">Delete</string>
+    <string name="btnEditText">Edit</string>
+    <string name="priceDefaultValue">0.00</string>
+    <string name="shippingLabel">Shipping</string>
+    <string name="priceLabel">Price</string>
+    <string name="typeDefaultValue">Game</string>
+    <string name="name_product_default_text">Name product</string>
+    <string name="product_description_default_value">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</string>
+    <string name="menu_add_product_title">Add product</string>
+    <string name="fieldError">This field is required.</string>
+    <string name="name_product_label">Name product</string>
+    <string name="type_product_label">Type</string>
+    <string name="description_product_label">Description</string>
+    <string name="price_product_label">Price</string>
+    <string name="shipping_product_label">Shipping</string>
+    <string name="save_product_label">Save product</string>
+    <string name="save_changes_label">Save changes</string>
+    <string name="delete_product_menu">Delete product menu</string>
+    <string name="delete_alert_title">Delete product</string>
+    <string name="delete_alert_message">Are you sure you want to delete this product?</string>
+    <string name="delete_alert_negativeButton">CANCEL</string>
+    <string name="delete_alert_positiveButton">CONFIRM</string>
+    <string name="login_alert_title">Error</string>
+    <string name="login_alert_message">An error occurred while trying to authenticate the user.</string>
+    <string name="login_alert_positiveButton">Accept</string>
+
+</resources>

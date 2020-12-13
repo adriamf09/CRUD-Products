@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.products.fragments.LoginFragment"
+        android:label="Login"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_loginFragment_to_listProductsFragment"
+            app:destination="@id/listProductsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/listProductsFragment"
+        android:name="com.example.products.fragments.ListProductsFragment"
+        android:label="Products"
+        tools:layout="@layout/fragment_list_products" >
+        <action
+            android:id="@+id/action_listProductsFragment_to_addProductFragment"
+            app:destination="@id/addProductFragment" />
+        <action
+            android:id="@+id/action_listProductsFragment_to_editProductFragment"
+            app:destination="@id/editProductFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addProductFragment"
+        android:name="com.example.products.fragments.AddProductFragment"
+        android:label="Add new product"
+        tools:layout="@layout/fragment_add_product" />
+    <fragment
+        android:id="@+id/editProductFragment"
+        android:name="com.example.products.fragments.EditProductFragment"
+        android:label="Edit product"
+        tools:layout="@layout/fragment_edit_product" />
+</navigation>
